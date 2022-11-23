@@ -45,21 +45,13 @@
       <receiver android:name="com.adobe.phonegap.push.BackgroundActionButtonHandler"/>
       <receiver android:name="com.adobe.phonegap.push.PushDismissedHandler"/>
 
-<<<<<<< HEAD
-      <service android:exported="true" android:name="com.adobe.phonegap.push.FCMService">
-=======
       <service android:name="com.adobe.phonegap.push.FCMService" android:exported="true">
->>>>>>> real/3.0.x
         <intent-filter>
           <action android:name="com.google.firebase.MESSAGING_EVENT"/>
         </intent-filter>
       </service>
 
-<<<<<<< HEAD
-      <service android:exported="true" android:name="com.adobe.phonegap.push.PushInstanceIDListenerService">
-=======
       <service android:name="com.adobe.phonegap.push.PushInstanceIDListenerService" android:exported="true" >
->>>>>>> real/3.0.x
         <intent-filter>
           <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
         </intent-filter>
